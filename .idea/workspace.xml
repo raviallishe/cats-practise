@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/hackday/SequencePlugin" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/lab1" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/SequencePlugin" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Applet.Unnamed">
+    <configuration name="Unnamed" type="Applet" nameIsGenerated="true">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="recording" autostart="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Applet.Unnamed" />
+      <item itemvalue="Application.Unnamed" />
+    </list>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/caste-free" value="PREVIEW" />
+        <entry key="$USER_HOME$/dflux/dflux-icm" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../GlobalMinimum" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Knight-s-tour" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../akka-essentials" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../akka-streams-exp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../caste-free-people" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../e-agriculture" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../eagriculture" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../gender-recognition" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../kafka-beginners-course" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../kafka-consumer-elasticsearch" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../lmp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../sudoku-with-akka-actors" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../twitter-kafka" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/candidate" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/commercetools-test" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/hackerrank" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/hadron-test" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/hcl" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/hcl-test" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/lavego" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/lavego-play" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/newmonscala" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/newswhip" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/piece-tour" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/pizzeria" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/pizzeria1" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/scala-training-2020" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/tvi-service" value="PREVIEW" />
+        <entry key="$USER_HOME$/project-tests/twitterstream" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/access-control-seervice" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/adis-profiles" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/data-api" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/nano-ingest" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/nano-users-service" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/nano-webapp" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/play-guard/samples/play-guard-guice-sample" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/scala-training-2020" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/sm-api" value="PREVIEW" />
+        <entry key="$USER_HOME$/projects/tokenizer-api" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
