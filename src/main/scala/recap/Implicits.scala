@@ -18,7 +18,9 @@ object Implicits extends App {
 
   val oneSec: FiniteDuration = 1.second
 
-  //2. implicit arguments and values
+
+
+  //2. implicit arguments and values -----------------------------------------------------------------------
 
   def increment(x: Int)(implicit amount: Int) = x + amount
 
@@ -47,7 +49,9 @@ object Implicits extends App {
   val personJsonList = listToJson(list)              //listToJson[Person](list)(JSONSerializer)
   // implicit argument is used to prove the existence of type
 
-  //3. Implicits methods
+
+
+  //3. Implicits methods --------------------------------------------------------------------------------------------
 
   implicit def oneArgCaseClassSerializer[T <: Product] :JSONSerializer[T] = new JSONSerializer[T] {    //generic implementation for T as any case class
     override def toJson(value: T): String =
