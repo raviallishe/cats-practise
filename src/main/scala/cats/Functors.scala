@@ -1,4 +1,4 @@
-package cats.functors
+package cats
 
 import cats._
 import cats.implicits.catsStdInstancesForList
