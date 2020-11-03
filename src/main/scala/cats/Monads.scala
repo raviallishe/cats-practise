@@ -44,8 +44,10 @@ object Monads {
    */
   //Monads
   trait  MyMonad[M[_]] {
-    def pure[A]: M[A]
+    def pure[A](value: A): M[A]
     def flatMap[A, B](initialValue: M[A])(f: A => M[B]): M[B]
+    //implement map using pure and flatMap above -- cats Monad map is also implemented in the same way after extending from Functor
+    def map[A,B](value: M[A])(f: A => B) : M[B] = flatMap(value)(x => pure(f(x)))
   }
 
   // cats Monad
@@ -74,7 +76,25 @@ object Monads {
   def getPairs[M[_], A, B](numbers: M[A], chars: M[B])(implicit monads: Monad[M]) =
     monads.flatMap(numbers)(n => monads.map(chars)(c => (n, c)))
 
-  
+  //extension methods - wirder imports - pure and flatMap
+  //pure
+  import cats.syntax.applicative._     // pure is here
+  val oneOption = 1.pure[Option]       // implicit Monad[Option] well be used => Some(1)
+  val oneList = 1.pure[List]
+
+  // flatMap
+  import cats.syntax.flatMap._        // flatMap is here
+  val oneOptionTransformed = oneOption.flatMap(x => (x + 4).pure[Option])
+
+  // Monad extends Functor             // Monad extends Applicative exteds Apply extends Functor
+  import cats.syntax.functor._         // map is ere
+  val oneOptionMapped = oneOption.map(_ + 2)
+  // for comprehensions
+  val composedOptionFor = for {
+    one <- 1.pure[Option]
+    two <- 2.pure[Option]
+  } yield (one + two)
+
   println(getPairs(numbersList, charsList))
   println(getPairs(numOption, charOption))
   println(getPairs(numFuture, charFuture))
