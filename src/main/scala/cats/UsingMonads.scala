@@ -15,8 +15,8 @@ object UsingMonads extends App {
   type ErrorOr[T] = Either[Throwable, T]
   import cats.instances.either._
   val loadingMonad = Monad[LoadingOr]
-  val anEither = loadingMonad.pure(44)
-  val aChangedLoading = loadingMonad.flatMap(anEither)(e => if(e % 2 ==0) Right(e + 4) else Left("Loading meaning of Life"))
+  val anEither: LoadingOr[Int] = loadingMonad.pure(44)
+  val aChangedLoading: LoadingOr[Int] = loadingMonad.flatMap(anEither)(e => if(e % 2 ==0) Right(e + 4) else Left("Loading meaning of Life"))
 
 
   //imaginary online store
@@ -26,7 +26,7 @@ object UsingMonads extends App {
   else Right("Pune")
 
   val orderId = 55L
-  val orderLocation = loadingMonad.flatMap(getOrderStatus(orderId))(orderStatus => getTrackStatus(orderStatus))
+  val orderLocation: LoadingOr[String] = loadingMonad.flatMap(getOrderStatus(orderId))(orderStatus => getTrackStatus(orderStatus))
 
   //use extension method
   val orderLocationWithExtensionMethod = getOrderStatus(orderId).flatMap(orderStatus => getTrackStatus(orderStatus))

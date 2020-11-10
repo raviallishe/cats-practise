@@ -9,7 +9,7 @@ object Monoids extends App {
   // |+| is always associative meaning a |+| b == b |+| a is always same
 
   val sumLeft = numbers.foldLeft(0)(_ |+| _)
-  val sumRight = numbers.foldLeft(0)(_ |+| _)  // both are same
+  val sumRight = numbers.foldRight(0)(_ |+| _)  // both are same
 
   //general API
 //  def combineFold[T](list: List[T])(implicit semigroup: Semigroup[T]) = {

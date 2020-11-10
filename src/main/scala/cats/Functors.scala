@@ -20,13 +20,13 @@ object Functors extends App {
   val aModifiedTry = Try(33).map((_ + 1))  // Success(34
 
   //simplified definition of Functor by creating a similar
-  trait MyFunctor[F[_]] {      // F[_] is a higher kind(composite type/type constructor) where a generic data type take another type
+  trait MyFunctor[F[_]] {      // F[_] is a higher-kinded(composite type/type constructor) where a generic data type take another type
     def map[A,B](container: F[A])(f: A => B): F[B]
   }
 
   // cats Functor
   import cats.Functor
-  import cats.instances.list._            // includes Functor[List] among all other types
+  import cats.instances.list._            // includes Functor[List] and all other types
   val listFunctor = Functor[List]         // returns instance of List type by calling apply
   val incrementedNumbers = listFunctor.map((1 to 5).toList)(_ + 1)
 

@@ -40,7 +40,7 @@ object Monads {
   /*
   Pattern
   - wrapping a value into M value
-  - the flatMap defination
+  - the flatMap definition
    */
   //Monads
   trait  MyMonad[M[_]] {
@@ -76,18 +76,18 @@ object Monads {
   def getPairs[M[_], A, B](numbers: M[A], chars: M[B])(implicit monads: Monad[M]) =
     monads.flatMap(numbers)(n => monads.map(chars)(c => (n, c)))
 
-  //extension methods - wirder imports - pure and flatMap
+  //extension methods - weirder imports - pure and flatMap
   //pure
   import cats.syntax.applicative._     // pure is here
-  val oneOption = 1.pure[Option]       // implicit Monad[Option] well be used => Some(1)
+  val oneOption = 1.pure[Option]       // implicit Monad[Option] will be used => Some(1)
   val oneList = 1.pure[List]
 
   // flatMap
   import cats.syntax.flatMap._        // flatMap is here
   val oneOptionTransformed = oneOption.flatMap(x => (x + 4).pure[Option])
 
-  // Monad extends Functor             // Monad extends Applicative exteds Apply extends Functor
-  import cats.syntax.functor._         // map is ere
+  // Monad extends Functor             // Monad extends Applicative extends Apply extends Functor
+  import cats.syntax.functor._         // map is here
   val oneOptionMapped = oneOption.map(_ + 2)
   // for comprehensions
   val composedOptionFor = for {
