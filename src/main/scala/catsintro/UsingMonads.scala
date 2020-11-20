@@ -55,7 +55,7 @@ object UsingMonads extends App {
   }
 
   // 1. different impl for Option
-  val responseOption = for {
+  val responseOption: Option[String] = for {
     conn <- OptionHttpService.getConnection(config)
     response <- OptionHttpService.issueRequest(conn, "Hello, http service")
   } yield response
@@ -74,7 +74,7 @@ object UsingMonads extends App {
   }
 
   // 2. different impl for ErrorOr(Either) type
-  val errorOrResponse = for {
+  val errorOrResponse: Either[Throwable, String] = for {
     conn <- AggressiveHttpService.getConnection(config)
     response <- AggressiveHttpService.issueRequest(conn, "Hello, http service")
   } yield response
