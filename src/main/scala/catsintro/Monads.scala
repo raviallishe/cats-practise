@@ -1,8 +1,8 @@
-package cats
+package catsintro
 
-import java.util.concurrent.{ExecutorService, Executors}
+import java.util.concurrent.{Executors}
 
-import scala.concurrent.{ExecutionContext, ExecutionContextExecutorService, Future}
+import scala.concurrent.{ExecutionContext, Future}
 
 object Monads {
 

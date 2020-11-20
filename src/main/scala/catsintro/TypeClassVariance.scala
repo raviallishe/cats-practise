@@ -1,4 +1,4 @@
-package cats
+package catsintro
 
 object TypeClassVariance extends App {
 

@@ -1,4 +1,4 @@
-package cats
+package catsintro
 
 import scala.util.Try
 

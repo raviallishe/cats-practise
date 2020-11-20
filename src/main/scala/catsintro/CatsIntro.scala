@@ -1,4 +1,4 @@
-package cats
+package catsintro
 
 object CatsIntro extends App {
 

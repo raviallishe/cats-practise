@@ -37,7 +37,7 @@ object Writers extends App {
     }
   }
 
-  def countAndLog(n: Int): Writer[List[String], Int] = {
+  def countAndLog(n: Int): Writer[Vector[String], Int] = {
     if(n <= 0) Writer(Vector("starting"), 0)
     else countAndLog(n -1).flatMap( _ => Writer(Vector(s"$n"), n))
   }
